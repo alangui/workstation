@@ -1,0 +1,33 @@
+server:
+  servlet:
+    context-path: /starter
+
+spring:
+  application:
+    name: workstation
+  profiles:
+    active: dev
+
+---
+spring:
+  profiles: dev
+server:
+  port: 8081
+
+---
+spring:
+  profiles: test
+server:
+  port: 8082
+
+---
+spring:
+  profiles: stage
+server:
+  port: 8083
+
+---
+spring:
+  profiles: prod
+server:
+  port: 8084

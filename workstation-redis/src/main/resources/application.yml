@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+
+# redis 哨兵模式配置
+spring:
+  redis:
+    database: 0
+    timeout: 3000
+    lettuce:
+      pool:
+        max-idle: 50
+        min-idle: 10
+        max-active: 100
+        max-wait: 1000
+    sentinel:
+      master: mymaster
+      nodes: 121.4.47.248:26379,121.4.47.248:26380,121.4.47.248:26381
+
+logging:
+  level:
+    root: debug
