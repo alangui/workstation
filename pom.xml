@@ -13,6 +13,7 @@
         <module>workstation-redis</module>
         <module>workstation-spring</module>
         <module>workstation-eureka</module>
+        <module>workstation-ribbon</module>
     </modules>
 
     <groupId>com.qing.niu</groupId>
