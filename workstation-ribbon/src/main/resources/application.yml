@@ -11,3 +11,7 @@ eureka:
   instance:
     prefer-ip-address: true
     instance-id: ms-consumer-cashier-8003
+
+ribbon:
+  connectTimeout: 4000
+  readTimeout: 10000

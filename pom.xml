@@ -14,6 +14,7 @@
         <module>workstation-spring</module>
         <module>workstation-eureka</module>
         <module>workstation-ribbon</module>
+        <module>workstation-feign</module>
     </modules>
 
     <groupId>com.qing.niu</groupId>
