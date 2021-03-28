@@ -20,7 +20,7 @@ public class OrderServiceController {
 
     private static Logger logger = LoggerFactory.getLogger(OrderServiceController.class);
 
-    @RequestMapping("/placeOrder")
+    @RequestMapping("placeOrder")
     public String placeOrder(){
         logger.info("接受到下订单请求。。。");
         return "下单成功";

@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @ProjectName IntelliJ IDEA
  * @Version 1.0.0
  */
-@FeignClient(name = "order-service", configuration = CustomFeignClientConfiguration.class)
+@FeignClient(name = "order-center", configuration = CustomFeignClientConfiguration.class)
 public interface OrderService {
 
     @PostMapping("/order/placeOrder")
