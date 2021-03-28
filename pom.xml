@@ -15,6 +15,7 @@
         <module>workstation-eureka</module>
         <module>workstation-ribbon</module>
         <module>workstation-feign</module>
+        <module>workstation-nacos</module>
     </modules>
 
     <groupId>com.qing.niu</groupId>
@@ -27,6 +28,7 @@
         <java.encoding>UTF-8</java.encoding>
 
         <spring-cloud.version>Hoxton.SR6</spring-cloud.version>
+        <spring.cloud.alibaba.version>2.1.0.RELEASE</spring.cloud.alibaba.version>
 
         <maven-compiler-plugin>3.1</maven-compiler-plugin>
         <maven-dependency-plugin>2.8</maven-dependency-plugin>
@@ -43,6 +45,13 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
                 <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring.cloud.alibaba.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
