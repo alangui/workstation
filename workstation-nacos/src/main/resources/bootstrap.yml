@@ -1,11 +1,7 @@
 spring:
+  application:
+    name: order-center
   cloud:
     nacos:
-      config:
-        server-addr: localhost:8848
-        file-extension: yml
-
-  application:
-    name: order-certer
-  profiles:
-    active: prod
+      discovery:
+        server-addr: http://localhost:8848

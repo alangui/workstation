@@ -1,5 +1,10 @@
 package com.qing.niu.workstation.nacos;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
+
 /**
  * <p>
  * </p>
@@ -10,9 +15,12 @@ package com.qing.niu.workstation.nacos;
  * @Package com.qing.niu.workstation.nacos
  * @Version 1.0.0
  */
+@EnableFeignClients
+@EnableDiscoveryClient
+@SpringBootApplication
 public class NacosProviderApplicationStart {
 
     public static void main(String[] args) {
-
+        SpringApplication.run(NacosProviderApplicationStart.class, args);
     }
 }
